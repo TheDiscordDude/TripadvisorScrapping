@@ -47,7 +47,7 @@ def get_restau_rating(driver):
         review_tag = WebDriverWait(driver, 10).until(
             ec.presence_of_element_located((By.CLASS_NAME, "RWYkj"))
         )
-        title = review_tag.get_attribute("title")
+        title = review_tag.get_attribute("aria-label")
         rating_string = title[0:3]
         rating = float(rating_string[0:3])
     except TimeoutException:

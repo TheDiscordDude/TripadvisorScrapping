@@ -7,7 +7,7 @@ This project is used to scrap restaurants and user infos from tripadvisor.
 ## How to use
 
 In order to use this srcipt, you'll need to setup some things : 
-- A database with a 
+- A database named 'tripadvisor' with the tables from `tripadvisor_init.sql` in it. 
 - The geckodriver in the same folder as the main.py (in both userToRestau and restauToUser)
 
 We also made it so it could work on a linux server with close to no intervention.
